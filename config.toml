@@ -6,6 +6,7 @@ compile_sass = false
 
 # Theme for the site
 theme = "anemone"
+
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
@@ -15,4 +16,5 @@ build_search_index = false
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+# favicon
+favicon = "favicon.ico"
