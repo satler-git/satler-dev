@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://satler-dev.pages.dev"
-default_language = "en"
+default_language = "ja"
 generate_feed = true
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -12,10 +12,10 @@ theme = "anemone"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-[languages.ja]
+[languages.en]
 weight = 2
-languageName = "Japanese"
-languageCode = "ja"
+languageName = "English"
+languageCode = "en"
 
 [markdown]
 # Whether to do syntax highlighting

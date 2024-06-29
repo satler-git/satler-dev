@@ -3,7 +3,7 @@
 
 # Overview
 
-satler is hobby developer, student.
+趣味のデベロッパー。どこかの学生
 
 ## What does he focus on?
 
