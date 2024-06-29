@@ -1,5 +1,7 @@
 # The URL the site will be built for
 base_url = "https://satler-dev.pages.dev"
+default_language = "en"
+generate_feed = true
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -10,6 +12,11 @@ theme = "anemone"
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+[languages.ja]
+weight = 2
+languageName = "Japanese"
+languageCode = "ja"
+
 [markdown]
 # Whether to do syntax highlighting
 render_emoji = true
@@ -19,12 +26,19 @@ highlight_code = true
 [extra]
 # favicon
 favicon = "favicon.ico"
+toc = true
+
+list_pages = true
+
+author = "satler"
 
 default_theme = "light"
 twitter_card = true
 
 header_nav = [
-  { url = "/", name_en = "/home/" },
-  { url = "/product", name_en = "/product/" },
-  { url = "/blog", name_en = "/blog/" }
+  { url = "/", name_en = "/home/", name_ja = "/home/" },
+  # { url = "/ja", name_en = "/ja/", name_ja = "" },
+  # { url = "/", name_ja = "/en/", name_en = "" },
+  { url = "/product", name_en = "/product/", name_ja = "/product/" },
+  { url = "/blog", name_en = "/blog/", name_ja = "/blog/" }
 ]
