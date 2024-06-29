@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "IBM Plex Sans JP";
+  src: url("../fonts/IBMPlexSansJP-Bold.ttf") format("truetype");
+  unicode-range: U+2E80-10FFFF;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans JP";
+  src: url("../fonts/IBMPlexSansJP-Regular.ttf") format("truetype");
+  unicode-range: U+2E80-10FFFF;
+}
+
 :root,
 ::backdrop {
   /* set sans-serif & mono fonts */
-  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+  --sans-font: "IBM Plex Sans JP", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
     "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
-  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --mono-font: "IBM Plex Sans JP", Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --standard-border-radius: 5px;
 
   /* default colors */
