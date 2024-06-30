@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        submodule: recursive
+        submodules: recursive
     - name: Build
       uses: crowselectromusic/zola-build@1.2.0
