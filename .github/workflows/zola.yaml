@@ -1,4 +1,4 @@
-name: Rust
+name: Zola
 
 on:
   pull_request:
@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodule: recursive
     - name: Build
       uses: crowselectromusic/zola-build@1.2.0
