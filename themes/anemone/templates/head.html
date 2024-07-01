@@ -91,8 +91,6 @@
 {% endif %}
 {% block css %}
 <link rel="preload" type="text/css" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}" as="style"/>
-<link rel="preload" type="text/css" href="{{ get_url(path='css/reset-min.css', trailing_slash=false) | safe }}" as="style"/>
-<link rel="preload" type="text/css" href="{{ get_url(path='css/suCSS-min.css', trailing_slash=false) | safe }}" as="style"/>
 <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/reset-min.css', trailing_slash=false) | safe }}"/>
 <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/suCSS-min.css', trailing_slash=false) | safe }}"/>
 <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}" media="print" onload="this.media='all'"/>
