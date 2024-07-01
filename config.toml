@@ -22,6 +22,9 @@ languageCode = "en"
 render_emoji = true
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+external_links_target_blank = true
+smart_punctuation = true
+lazy_async_image = true
 
 [extra]
 # favicon
