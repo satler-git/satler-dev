@@ -1,5 +1,6 @@
 +++
 title = "satler.dev"
+description = "satler's Tech Blog. About Rust, Elixir."
 +++
 
 # Overview
