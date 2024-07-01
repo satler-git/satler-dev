@@ -90,11 +90,9 @@
 {% endblock feed %}
 {% endif %}
 {% block css %}
-<link rel="preload" type="text/css" href="{{ get_url(path='css/reset-min.css', trailing_slash=false) | safe }}"/>
-<link rel="preload" type="text/css" href="{{ get_url(path='css/suCSS-min.css', trailing_slash=false) | safe }}"/>
-<link rel="preload" type="text/css" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}"/>
-<link rel="stylesheet" type="text/css" href="{{ get_url(path='css/reset-min.css', trailing_slash=false) | safe }}" media="print" onload="this.media='all'"/>
-<link rel="stylesheet" type="text/css" href="{{ get_url(path='css/suCSS-min.css', trailing_slash=false) | safe }}" media="print" onload="this.media='all'"/>
+<link rel="preload" type="text/css" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}" as="style"/>
+<link rel="stylesheet" type="text/css" href="{{ get_url(path='css/reset-min.css', trailing_slash=false) | safe }}"/>
+<link rel="stylesheet" type="text/css" href="{{ get_url(path='css/suCSS-min.css', trailing_slash=false) | safe }}"/>
 <link rel="stylesheet" type="text/css" href="{{ get_url(path='css/style.css', trailing_slash=false) | safe }}" media="print" onload="this.media='all'"/>
 {% endblock css %}
 <script src="{{ get_url(path='js/script.js', trailing_slash=false) | safe }}" defer></script>
