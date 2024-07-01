@@ -35,7 +35,7 @@ list_pages = true
 
 author = "satler"
 
-default_theme = "light"
+default_theme = "dark"
 twitter_card = true
 
 header_nav = [
