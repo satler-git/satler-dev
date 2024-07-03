@@ -1,6 +1,3 @@
 [submodule "resource/suCSS"]
 	path = resource/suCSS
 	url = https://github.com/satler-git/suCSS.git
-[submodule "themes/anemone"]
-	path = themes/anemone
-	url = https://github.com/satler-git/anemone.git
