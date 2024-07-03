@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://satler-dev.pages.dev"
+base_url = "https://satler.dev/"
 default_language = "ja"
 generate_feeds = true
 
