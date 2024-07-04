@@ -27,7 +27,8 @@ lazy_async_image = true
 
 [extra]
 # favicon
-favicon = "favicon.ico"
+svg_favicon = true
+favicon = "favicon.svg"
 toc = true
 
 list_pages = true
