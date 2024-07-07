@@ -90,7 +90,7 @@
 {% endblock metatags %}
 {% if config.generate_feed %}
 {% block feed %}
-<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}"> 
+<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
 {% endblock feed %}
 {% endif %}
 {% block css %}
