@@ -1,7 +1,10 @@
 +++
 title = "技術ブログを始めた話"
 date = 2024-07-07
-description = "About blog post"
+description = "技術ブログをSSGでほとんど無料で始めたことについて書かれている記事。テーマのカスタマイズも行っている。"
+
+[extra]
+comment = true
 
 [taxonomies]
 tags = ["meta/blog"]
