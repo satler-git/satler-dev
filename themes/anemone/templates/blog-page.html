@@ -39,6 +39,7 @@
 
 <p class="tags-data">
   {% if page.taxonomies.tags %}
+  <span  class="tag-text">Tags</span>
   {% for tag in page.taxonomies.tags %}
   <a href="/tags/{{ tag | slugify }}">&#47;{{ tag }}&#47;</a>
   {% endfor %}
