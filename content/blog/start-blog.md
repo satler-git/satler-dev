@@ -4,7 +4,7 @@ date = 2024-07-07
 description = "About blog post"
 
 [taxonomies]
-tags = ["meta/blog", "test"]
+tags = ["meta/blog"]
 +++
 
 このポストはあなたが今見ているブログを始めた時の記録。
