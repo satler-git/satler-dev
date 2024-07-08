@@ -28,7 +28,7 @@ lazy_async_image = true
 [extra]
 # favicon
 svg_favicon = true
-default_card_image = "favicon.webp"
+default_card_image = "favicon.png"
 favicon = "favicon.svg"
 toc = true
 
