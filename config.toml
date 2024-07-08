@@ -30,6 +30,7 @@ lazy_async_image = true
 svg_favicon = true
 default_card_image = "favicon.png"
 favicon = "favicon.svg"
+twitter_id = "satleri_sentler"
 toc = true
 
 list_pages = true

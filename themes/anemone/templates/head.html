@@ -77,6 +77,9 @@
 {% if description %}
 <meta property="twitter:description" content="{{ description }}">
 {% endif %}
+{% if config.extra.twitter_id %}
+<meta property="twitter:site" content="@{{ config.extra.twitter_id }}">
+{% endif %}
 {% if image %}
 <meta property="twitter:image" content="{{ image }}">
 {% endif %}
