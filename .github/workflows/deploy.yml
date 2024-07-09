@@ -1,0 +1,47 @@
+name: Deploy to Cloudflare pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.4.0
+          cache: 'npm'
+
+      - name: Minify css
+        run: |
+            npm install -g clean-css-cli
+            cleancss resource/suCSS/reset.css --output static/css/reset-min.css
+            cleancss resource/suCSS/suCSS.css --output static/css/suCSS-min.css
+
+      - name: Install zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.1
+
+      - name: Build with zola
+        run: zola build
+
+      - run: npm test
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: satler-dev
+          directory: ./public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
