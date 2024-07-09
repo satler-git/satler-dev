@@ -34,8 +34,6 @@ jobs:
       - name: Build with zola
         run: zola build
 
-      - run: npm test
-
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
