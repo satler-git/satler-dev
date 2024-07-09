@@ -23,8 +23,8 @@ jobs:
       - name: Minify css
         run: |
             npm install -g clean-css-cli
-            cleancss resource/suCSS/reset.css --output static/css/reset-min.css
-            cleancss resource/suCSS/suCSS.css --output static/css/suCSS-min.css
+            cleancss resource/suCSS/reset.css | tee static/css/reset-min.css
+            cleancss resource/suCSS/suCSS.css | tee static/css/suCSS-min.css
 
       - name: Install zola
         uses: taiki-e/install-action@v2
