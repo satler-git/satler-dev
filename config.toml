@@ -45,6 +45,6 @@ header_nav = [
   { url = "/", name_en = "/home/", name_ja = "/home/" },
   # { url = "/ja", name_en = "/ja/", name_ja = "" },
   # { url = "/", name_ja = "/en/", name_en = "" },
-  { url = "/product", name_en = "/product/", name_ja = "/product/" },
-  { url = "/blog", name_en = "/blog/", name_ja = "/blog/" }
+  { url = "/product/", name_en = "/product/", name_ja = "/product/" },
+  { url = "/blog/", name_en = "/blog/", name_ja = "/blog/" }
 ]
