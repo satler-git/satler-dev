@@ -87,6 +87,7 @@ encore run
 {{ img(id="https://res.cloudinary.com/dsexsi1cq/blog/encore/ztwvor459vlkv58l4cg2.png", alt="先ほどの説明に加え右側の左側の並んでいるAPIの下にAPIが呼び出されており結果とログが表示されている。TRACEには一回helloが呼ばれ成功したことが表示されている", caption="APIをEncoreのダッシュボードから呼んでいる様子", height="1616", width="897") }}
 
 このあと Quick start ではデプロイを始めているが、この記事では試しにもう一個 API を書いてみる。ちなみに`encore run`はホットリロードにも対応している。
+
 こんな感じになった。`/cat/world3`とすると`Meow world! Meow world! Meow world!`が帰ってくる。`log`は比較的使いやすかった。
 
 ```ts
@@ -107,6 +108,23 @@ export const cat = api(
   }
 );
 ```
+
+### デプロイ
+
+本来なら専用のGithubリポジトリとリンクしてmainにpushした時に自動でデプロイしてくれるようだ。しかし、開始時に「なんかリポジトリできてる、消すか」と思って消してsandbox内にある。しかも見た感じrootにないとダメそう。`encore.app`などのファイルを作ることでビルドプロセスをカスタマイズできる模様。いろいろ見ていたがダメそうなので諦める。
+
+### 値段
+
+無料プランでは以下の通り。([ここ](https://encore.dev/docs/about/usage)から。変わっている可能性あり)
+
+| | アプリケーション毎 |
+| - | - |
+| リクエスト | 100,000 / 日 |
+| データベース容量 | 1 GB |
+| PubSubメッセージ | 100,000 / 日 |
+| Cron| 1時間に一回 |
+
+結構安い。安すぎるくらいだと思う。(この表ダサいな)
 
 ## 所感
 
