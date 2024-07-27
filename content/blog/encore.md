@@ -111,7 +111,7 @@ export const cat = api(
 
 ### デプロイ
 
-本来なら専用のGithubリポジトリとリンクしてmainにpushした時に自動でデプロイしてくれるようだ。しかし、開始時に「なんかリポジトリできてる、消すか」と思って消してsandbox内にある。しかも見た感じrootにないとダメそう。`encore.app`などのファイルを作ることでビルドプロセスをカスタマイズできる模様。いろいろ見ていたがダメそうなので諦める。
+本来なら専用のGithubリポジトリとリンクしてmainにpushした時に自動でデプロイしてくれるようだ。しかし、開始時に「なんかリポジトリできてる、消すか」と思って消してsandbox内にある。しかも見た感じrootにないとダメそう。ビルドプロセス自体は`encore.app`というファイルを作ることでカスタマイズできる。結局いろいろ見ていたがダメそうなので諦めた。
 
 ### 値段
 
@@ -124,7 +124,7 @@ export const cat = api(
 | PubSubメッセージ | 100,000 / 日 |
 | Cron| 1時間に一回 |
 
-結構安い。安すぎるくらいだと思う。(この表ダサいな)
+結構安い。安すぎるくらいだと思う。(この表ダサいからそのうち変えたい)
 
 ## 所感
 
@@ -141,4 +141,4 @@ export const cat = api(
   - SDK
     - Encoreが倒れたり、他のPaaSにAPIを移行しようとなったときに大変
 
-そこまで大きいプロジェクトではなく、GoかTypescriptを採用できるなら刺さると思う。自分はどちらの言語もほとんどかけない(上のcatでも20分くらい調べながら作った)からめっちゃ刺さったというわけではない。今回のソースコードはGithubの[satler-git/sandbox](https://github.com/satler-git/sandbox/tree/main/typescript/hello-encore)の中で見れます。
+そこまで大きいプロジェクトではなく、GoかTypescriptを採用できるなら刺さると思う。自分はどちらの言語もほとんどかけない(上のcatでも20分くらい調べながら作った)からめっちゃ刺さったというわけではない。今回のソースコードはGithubの[satler-git/sandbox](https://github.com/satler-git/sandbox/tree/main/typescript/hello-encore)の中で見れる。
