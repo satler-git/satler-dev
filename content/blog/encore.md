@@ -1,6 +1,6 @@
 +++
 title = "Encore freefordevシリーズ1"
-date = 2024-01-01
+date = 2024-07-27
 description = "freefordevに載っていたPaaS又はクラウドを試していくシリーズの一つめ。encoreというサービスについての記事。試しにRust製のツールをデプロイする。"
 
 [extra]
