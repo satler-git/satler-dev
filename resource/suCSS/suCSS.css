@@ -594,9 +594,9 @@ blockquote {
   font-style: italic;
 }
 
-/* blockquote.info {
-  border-left: #30ff15;
-} */
+blockquote.info {
+  border-inline-start: .375rem solid #66b95b;
+}
 
 cite {
   font-size: .875rem;
