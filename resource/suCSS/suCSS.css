@@ -35,6 +35,7 @@
 
 /* theme media queries */
 @media (prefers-color-scheme: dark) {
+
   :root,
   ::backdrop {
     color-scheme: dark;
@@ -48,6 +49,7 @@
     --border: #DBD5BC;
     --link: #E2AEA2;
   }
+
   img,
   video {
     opacity: 0.8;
@@ -55,6 +57,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+
   :root,
   ::backdrop {
     color-scheme: light;
@@ -73,28 +76,28 @@
 [data-theme="light"] {
   /* default (light) theme */
   color-scheme: light;
-    --bg: #EEEEEE;
-    --bg-light: #CBCDCD;
-    --text: #41474E;
-    --text-light: #646868;
-    --accent: #D26878;
-    --accent-light: #e08f67;
-    --accent-text: var(--bg);
-    --border: #646868;
-    --link: #5690AF;
+  --bg: #EEEEEE;
+  --bg-light: #CBCDCD;
+  --text: #41474E;
+  --text-light: #646868;
+  --accent: #D26878;
+  --accent-light: #e08f67;
+  --accent-text: var(--bg);
+  --border: #646868;
+  --link: #5690AF;
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-    --bg: #222529;
-    --bg-light: #464949;
-    --text: #D6D6D6;
-    --text-light: #DBD5BC;
-    --accent: #78B6AD;
-    --accent-light: #87C9E5;
-    --accent-text: var(--bg);
-    --border: #DBD5BC;
-    --link: #E2AEA2;
+  --bg: #222529;
+  --bg-light: #464949;
+  --text: #D6D6D6;
+  --text-light: #DBD5BC;
+  --accent: #78B6AD;
+  --accent-light: #87C9E5;
+  --accent-text: var(--bg);
+  --border: #DBD5BC;
+  --link: #E2AEA2;
 }
 
 ::selection,
@@ -109,10 +112,12 @@
   height: 8px;
   overflow: visible;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
   width: 12px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-light);
 }
@@ -140,11 +145,12 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-row-gap: .625rem;
 }
-body > * {
+
+body>* {
   grid-column: 2;
 }
 
-body > footer {
+body>footer {
   color: var(--text-light);
   font-size: .875;
 }
@@ -153,36 +159,49 @@ body > footer {
 h1 {
   font-size: 2rem;
 }
+
 h2 {
   font-size: 1.75rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
+
 h4 {
   font-size: 1.25rem;
 }
+
 h5 {
   font-size: 1rem;
 }
+
 h6 {
   font-size: .75rem;
 }
 
-h1, h2,
-h3, h4,
-h5, h6 {
-  margin: .5em 0  .5em 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .5em 0 .5em 0;
 }
 
 /* Fix line height when title wraps */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.1;
 }
 
-h1::before, h2::before,
-h3::before, h4::before, 
-h5::before, h6::before {
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
   color: var(--accent);
   content: '# '
 }
@@ -191,18 +210,23 @@ h5::before, h6::before {
   h1 {
     font-size: 1.5rem;
   }
+
   h2 {
     font-size: 1.25rem;
   }
+
   h3 {
     font-size: 1rem;
   }
+
   h4 {
     font-size: .75rem;
   }
+
   h5 {
     font-size: .5rem;
   }
+
   h6 {
     font-size: .25rem;
   }
@@ -263,8 +287,8 @@ ol li:hover::marker {
 }
 
 /* Use flexbox to allow items to wrap, as needed */
-header > nav ul,
-header > nav ol {
+header>nav ul,
+header>nav ol {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -277,13 +301,16 @@ header > nav ol {
 }
 
 /* List items are inline elements, make them behave more like blocks */
-header > nav ul li,
-header > nav ol li {
+header>nav ul li,
+header>nav ol li {
   display: inline-block;
 }
 
 /* Consolidate box styling */
-aside, details, pre, progress {
+aside,
+details,
+pre,
+progress {
   background-color: var(--bg-light);
   border-radius: var(--standard-border-radius);
 }
@@ -295,6 +322,7 @@ aside {
   margin-inline-start: 10px;
   float: right;
 }
+
 *[dir="rtl"] aside {
   float: left;
 }
@@ -318,15 +346,15 @@ summary {
   word-break: break-all;
 }
 
-details[open] > summary + * {
+details[open]>summary+* {
   margin-top: 0;
 }
 
-details[open] > summary {
+details[open]>summary {
   margin-bottom: 0.5rem;
 }
 
-details[open] > :last-child {
+details[open]> :last-child {
   margin-bottom: 0;
 }
 
@@ -367,7 +395,7 @@ fieldset {
   border-radius: var(--standard-border-radius);
 }
 
-fieldset > legend {
+fieldset>legend {
   color: var(--accent);
 }
 
@@ -411,6 +439,7 @@ textarea:not([cols]) {
 }
 
 @media only screen and (max-width: 720px) {
+
   textarea,
   select,
   input {
@@ -434,7 +463,7 @@ label[type="button"] {
   line-height: normal;
 }
 
-.button[aria-disabled="true"], 
+.button[aria-disabled="true"],
 input:disabled,
 textarea:disabled,
 select:disabled,
@@ -469,11 +498,9 @@ label[type="button"]:hover {
 
 .button:focus-visible,
 button:focus-visible:where(:enabled),
-input:enabled:focus-visible:where(
-  [type="submit"],
+input:enabled:focus-visible:where([type="submit"],
   [type="reset"],
-  [type="button"]
-) {
+  [type="button"]) {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
@@ -488,8 +515,8 @@ input[type="radio"] {
   height: 14px;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[type="checkbox"]+label,
+input[type="radio"]+label {
   display: inline-block;
 }
 
@@ -503,6 +530,7 @@ input[type="radio"]:checked {
 }
 
 @media only screen and (max-width: 720px) {
+
   textarea,
   select,
   input {
@@ -512,7 +540,7 @@ input[type="radio"]:checked {
 
 input[type="color"] {
   height: 2.5rem;
-  padding:  0.2rem;
+  padding: 0.2rem;
 }
 
 input[type="file"] {
@@ -566,6 +594,10 @@ blockquote {
   font-style: italic;
 }
 
+/* blockquote.info {
+  border-left: #30ff15;
+} */
+
 cite {
   font-size: .875rem;
   color: var(--text-light);
@@ -573,12 +605,14 @@ cite {
 }
 
 dt {
-    color: var(--text-light);
+  color: var(--text-light);
 }
 
-code, pre,
+code,
+pre,
 pre span,
-kbd, samp {
+kbd,
+samp {
   font-family: var(--mono-font);
 }
 
@@ -589,7 +623,7 @@ pre {
   padding: .625rem;
   overflow: auto;
   font-style: monospace;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
 }
 
 p code,
@@ -661,7 +695,8 @@ dialog::backdrop {
 
 /* superscript & subscript */
 /* prevent scripts from affecting line-height. */
-sup, sub {
+sup,
+sub {
   vertical-align: baseline;
   position: relative;
 }
@@ -670,6 +705,6 @@ sup {
   top: -0.4em;
 }
 
-sub { 
-  top: 0.3em; 
+sub {
+  top: 0.3em;
 }
