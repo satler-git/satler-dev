@@ -1,7 +1,7 @@
 +++
 title = "NixOSでStylixを導入してみる"
 date = 2024-10-14
-description = "About blog post"
+description = "NixOSモジュールのStylixを使用して統一的にカラースキームを設定する"
 
 [extra]
 comment = true
@@ -18,7 +18,7 @@ tags = ["Nix", "NixOS", "home-manager"]
 
 雑に訳すと
 
-> Stylixは同じカラースキーマ、フォントや壁紙を適用するNixOSモジュール。様々なアプリケーションとデスクトップ環境で使用できる。
+> Stylixは同じカラースキーム、フォントや壁紙を適用するNixOSモジュール。様々なアプリケーションとデスクトップ環境で使用できる。
 
 ## インストール
 
