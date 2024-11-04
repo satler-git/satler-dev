@@ -7,10 +7,13 @@ description = "satler's Tech Blog. About Rust, Elixir."
 
 趣味のデベロッパー。どこかの学生
 
-## What does he focus on?
+## What does he concentrate on?
 
 - Rust
 - Elixir
+- Haskell
+- Nix
+    - [dotfiles](https://github.com/satler-git/dotfiles)
 - Engish
 
 ## Some accounts
