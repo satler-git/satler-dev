@@ -5,7 +5,7 @@ description = "satler's Tech Blog. About Rust, Elixir."
 
 # Overview
 
-趣味のデベロッパー。どこかの学生
+satler(`/ˈsatrɑː/`、SAMPA: `/"satrA:/`)。趣味のデベロッパー。どこかの学生
 
 ## What does he concentrate on?
 
