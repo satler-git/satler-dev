@@ -20,3 +20,4 @@ satler(`/ˈsatrɑː/`、SAMPA: `/"satrA:/`)。趣味のデベロッパー。ど�
 
 - `satler-git`@[Github](https://github.com/satler-git)
 - `satleri_sentler`@[X (a.k.a. Twitter)](https://twitter.com/satleri_sentler)
+- `@satler.dev`@[Bluesky](https://bsky.app/profile/satler.dev)
