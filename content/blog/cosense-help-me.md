@@ -1,6 +1,6 @@
 +++
 title = "いつも自分を助けてくれるPublicなCosenseたち"
-date = 2024-01-01
+date = 2024-10-04
 description = "いつも自分を助けてくれるCosenseたちを感謝をこめて紹介します"
 
 [extra]

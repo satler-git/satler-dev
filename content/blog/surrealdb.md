@@ -1,6 +1,6 @@
 +++
 title = "SurrealDBのTutorialsをやってみる"
-date = 2024-01-01
+date = 2024-10-04
 description = "About blog post"
 
 [extra]
