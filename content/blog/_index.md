@@ -6,4 +6,4 @@ page_template = "blog-page.html"
 description = "satler's Tech Blog. List of blog posts"
 +++
 
-> List of [tags](https://satler.dev/tags/)
+> List of [tags](/tags/)
