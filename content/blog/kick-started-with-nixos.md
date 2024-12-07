@@ -91,11 +91,6 @@ WindowsではscoopとChocolateyを併用していたので、それぞれのイ�
 
 そして以下のようなinputsがある。
 
-影響範囲が小さいPR（再ビルド数が500以下）はまずmasterにマージされ、その後、テストを経てnixos-unstable-small（テスト数が少ないブランチ）やnixos-unstable、nixpkgs-unstableに反映さる。影響範囲の大きいPRはもう少し違う動きをするが詳細は[nixpkgsのCONTRIBUTING.mdのstagingの章](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md#staging)を見てほしい。
-
-基本的にnixpkgsのブランチにはnixos-unstableを使っているが、たまにビルドできなくなることがある。そのため、nixpkgsのstable(今は24.11)とnixos-unstable-smallを使って、overrideしている。
-なぜ2つあるのかについては、既にPRがマージされているがCIの関係(14日の記事にも書くが、[Nixpkgs Pull Request Tracker](https://nixpk.gs/pr-tracker.html)というサイトで追跡できる)でまだnixos-unstableに降りてきていないときがあるからだ。
-
 - nixpkgs
 - nixpkgs-stable
 - nixpkgs-unstable-small
@@ -114,6 +109,13 @@ WindowsではscoopとChocolateyを併用していたので、それぞれのイ�
 - xremap
 - nixos-hardware
 - nix-gaming
+
+nixpkgsには複数のブランチがあって設定をする上で選ぶ必要がある。
+
+影響範囲が小さいPR（再ビルド数が500以下）はまずmasterにマージされ、その後、テストを経てnixos-unstable-small（テスト数が少ないブランチ）やnixos-unstable、nixpkgs-unstableに反映さる。影響範囲の大きいPRはもう少し違う動きをするが詳細は[nixpkgsのCONTRIBUTING.mdのstagingの章](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md#staging)を見てほしい。
+
+基本的にはnixos-unstableを使っているが、たまにビルドできなくなることがある。そのため、nixpkgsのstable(今は24.11)とnixos-unstable-smallを使って、overrideしている。
+なぜ2つあるのかについては、既にPRがマージされているがCIの関係(14日の記事にも書くが、[Nixpkgs Pull Request Tracker](https://nixpk.gs/pr-tracker.html)というサイトで追跡できる)でまだnixos-unstableに降りてきていないときがあるからだ。
 
 ## 感想
 
