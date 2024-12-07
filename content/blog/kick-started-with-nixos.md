@@ -15,7 +15,7 @@ tags = ["Nix", "NixOS"]
 
 この記事では、環境構築方法の詳細な紹介というより、dotfilesの成長過程とその記録を綴ったポエム的な内容をお届けする。
 
-[dotfiles](https://github.com/satler-git/dotfiles) のコミットを振り返ると、初めてのコミットは2024/8/24だ。その日に[コミット](https://github.com/satler-git/dotfiles/commit/4a7f323988c02a0f92c73d202aadb886d15bb9c0)されたのはNeovimとWindows向けタイル型ウィンドウマネージャーの[komorebi](https://github.com/LGUG2Z/komorebi/)(Windows向けのTilling WM)の設定のみだった。
+[dotfiles](https://github.com/satler-git/dotfiles) のコミットを振り返ると、初めての[コミット](https://github.com/satler-git/dotfiles/commit/4a7f323988c02a0f92c73d202aadb886d15bb9c0)は2024/8/26だ。その日にコミットされたのはNeovimとWindows向けタイル型ウィンドウマネージャーの[komorebi](https://github.com/LGUG2Z/komorebi/)(Windows向けのTilling WM)の設定のみだった。
 そして初めて`.nix`ファイルが[コミット](https://github.com/satler-git/dotfiles/commit/ff1f288d4f8e755a2290444be7021d96d8354852)されたのは2024/8/29だ。この当時の設定は、Asahiさんの記事、[NixOSで最強のLinuxデスクトップを作ろう](https://zenn.dev/asa1984/articles/nixos-is-the-best)を読みながら `/etc/nixos/configuration.nix` とかをコピーしてきただけの段階だ。
 
 現在のdotfilesは、1900行のNixと1300行のLuaによって支えられている。
