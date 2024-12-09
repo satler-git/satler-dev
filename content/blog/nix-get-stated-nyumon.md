@@ -37,7 +37,7 @@ Nixには[Noogle](https://noogle.dev/)というものがあり、HaskellのHoogl
 
 ## [Nixpkgs Pull Request Tracker](https://nixpk.gs/pr-tracker.html)
 
-nixpkgsには複数のブランチがあり、それぞれどの程度安定しているのかが違います。[NixOSを使い始めた](/blog/kick-started)にも少し書きましたが、
+nixpkgsには複数のブランチがあり、それぞれどの程度安定しているのかが違います。[NixOSを使い始めた](/blog/kick-started-with-nixos)にも少し書きましたが、
 
 ## https://lazamar.co.uk/nix-versions/
 
