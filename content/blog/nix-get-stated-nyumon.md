@@ -43,4 +43,4 @@ nixpkgsには複数のブランチがあり、それぞれどの程度安定し�
 
 # 言語ごとの話
 
-ロックファイルが生成される言語またはパッケージマネージャーを使っているあなたは幸運です。すでにNixでのビルドをサポートするための何らかのツールが作られている可能性が高いです。[awesome-nixのプログラミング言語別の章] (<https://github.com/nix-community/awesome-nix?tab=readme-ov-file#programming-languages>)を見に行ってみましょう。
+ロックファイルが生成される言語またはパッケージマネージャーを使っているあなたは幸運です。すでにNixでのビルドをサポートするための何らかのツールが作られている可能性が高いです。[awesome-nixのプログラミング言語別の章](<https://github.com/nix-community/awesome-nix?tab=readme-ov-file#programming-languages>)を見に行ってみましょう。
