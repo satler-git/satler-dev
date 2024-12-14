@@ -4,6 +4,8 @@ use std::path::Path;
 
 use chrono::Datelike;
 
+use anyhow::{bail, Result};
+
 mod flags {
     xflags::xflags! {
         cmd xtask {
@@ -22,14 +24,12 @@ mod flags {
     }
 }
 
-type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
-
 fn add(add: flags::Add) -> Result<()> {
     let path_from = format!("./content/blog/{}.md", add.name);
     let path = Path::new(&path_from);
 
     if path.try_exists()? && !add.force {
-        panic!("The file {path_from} exits. To force creation, use -f flag"); // TODO:
+        bail!("The file {path_from} exits. To force creation, use --force flag.");
     }
 
     let date = {
