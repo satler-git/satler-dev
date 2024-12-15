@@ -1,6 +1,6 @@
 +++
 title = "services-flakeとかを使って開発環境を作る"
-date = 2024-12-08
+date = 2024-12-14
 description = "services-flakeを使ってプロジェクトごとにNixOSでいうservicesのようなものを使う方法について"
 
 [extra]
