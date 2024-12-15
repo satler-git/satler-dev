@@ -131,7 +131,7 @@ OPTIONS:
 
 ## サブコマンド、`repeated`
 
-サブコマンドは`cmd`キーワードを用いて作成できる。また複数名前を書くことでエイリアスを追加できる。しかし実践はしなかったから詳しくは[ドキュメント](https://docs.rs/xflags/0.3.2/xflags/#syntax-reference)を見て欲しい。
+~~サブコマンドは`cmd`キーワードを用いて作成できる。また複数名前を書くことでエイリアスを追加できる。しかし実践はしなかったから詳しくは[ドキュメント](https://docs.rs/xflags/0.3.2/xflags/#syntax-reference)を見て欲しい。~~
 
 ```rust
 fn main() {
@@ -141,8 +141,34 @@ fn main() {
 }
 ```
 
+追記[^1]
+`cmd` キーワードは `parse_or_exit!` の中では使えないので、以下のようにする必要がある。詳しい使い方はこのブログの [xtask](https://github.com/satler-git/satler-dev/blob/c69007b646de2452b731737afff12e378bbe264e/xtask/src/main.rs) で見てほしい。
+
+
+```rust
+
+mod flags {
+    xflags::xflags! {
+        cmd xtask {
+            /// add new blog post
+            cmd run r exec {
+                /// force file creation
+                /// if the file exits, it will be replaced
+                optional -f, --force
+            }
+        }
+    }
+}
+```
 
 # おわり
 
 まだxtaskを活かせるような大きなプロジェクトは出来ていないがそのうち活用していきたい。シンプルに記述できてやりやすかった。
+
+---
+
+2024/12/15日追記
+[^1]: `cmd` キーワードは `parse_or_exit!` マクロでは使えない。おそらく複数の `struct` を生成する必要があるから。
+
+
 
