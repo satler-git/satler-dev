@@ -1,14 +1,18 @@
 +++
 title = "Nixで作るRustプロジェクト用の開発環境"
 date = 2024-12-21
-description = "About blog post"
+description = "NixとRustでいい感じのRustプロジェクトを作ります"
 
 [extra]
 comment = true
 
 [taxonomies]
-tags = ["tag1", "tag2"]
+tags = ["Nix", "Rust"]
 +++
+
+この記事は [Nix Advent Calendar](https://adventar.org/calendars/10086) の21日目の記事です。
+
+---
 
 ## はじめに
 
@@ -360,4 +364,5 @@ cargo-expandとcargo-nextest、そしてバージョンを指定した `rustc` �
 # おわりに
 
 すぐに使える `flake.nix` ではありますが、いろいろもりもりで長めの記事になってしまいました。実際は部分的に導入していくことも出来ます。
+最初の `flake.nix` は今作っている [satler-git/etymora](https://github.com/satler-git/etymora) というプロジェクトの `flake.nix` に部分的に変更を加えたものです。実は他に [satler-git/rust-template](https://github.com/satler-git/rust-template) というリポジトリもありますが、なかなかフィードバックが出来ていません。
 
