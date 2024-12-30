@@ -168,7 +168,7 @@ tags = ["Nix", "Rust"]
 - [git-hooks-nix](https://github.com/cachix/git-hooks.nix)
     - [Pre Commit](https://pre-commit.com/)のGit HooksとNixプロジェクトをいい感じに統合してくれます
 - [treefmt-nix](https://github.com/numtide/treefmt-nix)
-    - [https://github.com/numtide/treefmt](treefmt)という複数のフォーマッターをまとめて実行できるツールをNixに統合してくれます
+    - [https://github.com/numtide/treefmt](https://github.com/numtide/treefmt)という複数のフォーマッターをまとめて実行できるツールをNixに統合してくれます
 - [crane](https://github.com/ipetkov/crane)
     - Rustのプロジェクトをビルドするのに便利な機能などを提供してくれます
 
