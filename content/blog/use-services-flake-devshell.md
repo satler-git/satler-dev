@@ -191,6 +191,8 @@ Hello, world!
 +              };
 ```
 
+{{ img(id="https://res.cloudinary.com/dsexsi1cq/blog/use-services-flake-devshell/jqsbkut4hndybmofik7e.png", alt="process-composeの画面", caption="process-composeの画面", height="505", width="925") }}
+
 `nix develop` すれば、redis-cliも自動で追加されます。
 
 ```shell
