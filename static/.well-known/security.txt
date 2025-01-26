@@ -2,3 +2,4 @@ Contact: mailto:satler@satler.dev
 Expires: 2025-07-03T23:59:00.000Z
 Preferred-Languages: en, jp
 Canonical: https://satler.dev/.well-known/security.txt
+Encryption: https://keybase.io/satler/pgp_keys.asc
