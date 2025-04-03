@@ -25,6 +25,10 @@ mod flags {
                 /// force file creation
                 /// if the file exits, it will be replaced
                 optional -f, --force
+                /// create a daily post for yesterday
+                optional -y, --yersterday
+                /// doesn't change the description of jj
+                optional -n, --no-desc
             }
         }
     }
@@ -79,11 +83,11 @@ tags = [\"tag1\", \"tag2\"]
 
 fn daily(params: flags::Daily) -> Result<()> {
     let date = {
-        use chrono::{FixedOffset, Utc};
+        use chrono::{Duration, FixedOffset, Utc};
         let now_naive = {
             let now_utc = Utc::now();
             let now = now_utc.with_timezone(&FixedOffset::east_opt(9 * 3600).unwrap());
-            now.date_naive()
+            now.date_naive() - Duration::days(if params.yersterday { 1 } else { 0 })
         };
 
         format!(
@@ -121,11 +125,13 @@ tags = [\"daily\"]
         println!("The file {path_from} exits. To force creation, use --force flag.")
     }
 
-    Command::new("jj")
-        .arg("desc")
-        .arg("-m")
-        .arg(format!("daily: {date}"))
-        .status()?;
+    if !params.no_desc {
+        Command::new("jj")
+            .arg("desc")
+            .arg("-m")
+            .arg(format!("daily: {date}"))
+            .status()?;
+    }
 
     let editor = std::env::var("EDITOR").unwrap_or_else(|_| "vi".to_string());
 
