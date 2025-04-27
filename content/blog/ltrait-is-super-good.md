@@ -37,7 +37,7 @@ LTraitにはfall.vimやその他のVim用のFuzzyFinderのようにいろいろ�
 | [UI](https://docs.rs/ltrait/latest/ltrait/ui/trait.UI.html)                      | ユーザーの入力を管理したり、表示したりする。                       |
 | [Action](https://docs.rs/ltrait/latest/ltrait/action/trait.Action.html)          | Itemを受け取ってなにかを実行する                           |
 
-![DataFlow](https://github.com/user-attachments/assets/fc96d541-9123-4105-90d1-0bdb796a786e)
+{{ img(id="https://res.cloudinary.com/dsexsi1cq/blog/ltrait-is-super-good/fshq3ggfx04sxvj3okva.png", height="699", width="864") }}
 
 ## プロジェクトを作る
 
