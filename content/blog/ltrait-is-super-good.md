@@ -150,7 +150,7 @@ cargo run
 `add_raw_**`は少し違う動作をします。変換関数を受け取らないので、SourceならCusionをそのまま返したり、それ以外ならCusionを直接受けとったりする拡張を追加できます。
 つまりほとんど、`add_**(/* ... */, |c| c)`のような動作をします(lifetimeの関係で実際はこうは書けない)。
 
-これは、[ltrait/extra](https://github.com/ltriat/extra)にある便利関数郡だったり、`ltrait::**::Closure**`(Closureで拡張機能を実装する)を使うときに便利です。
+これは、[ltrait/extra](https://github.com/ltrait/extra)にある便利関数郡だったり、`ltrait::**::Closure**`(Closureで拡張機能を実装する)を使うときに便利です。
 `add_raw_**`を使うとCusionを定義しなくても使えますが、拡張性が著しく下がるのでおすすめはしません。
 
 SourceはStreamでアイテムを非同期に処理できますが、シンプルに実装するならそれは必要ではありません。`ltrait::source::from_iter`を使うことでIteratorからSourceを作成できます。
