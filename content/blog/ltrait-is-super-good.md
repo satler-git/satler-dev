@@ -16,7 +16,7 @@ tags = ["rust"]
 
 LTraitはカスタマイズできるOS用のFuzzyFinderです。Launcherでもあります。たとえばRaycastとかと近い動作をさせられます。
 
-名前はXMonad(Haskellで実装されているXサーバー)を参考にして、Rustで実装しているLauncherなのでL(auncher)Traitです。「えるとれいと」とと読みます。
+名前はXMonad(Haskellで実装されているXサーバー)を参考にして、Rustで実装しているLauncherなのでL(auncher)Traitです。「えるとれいと」と読みます。
 
 コンセプト自体はfall.vimとかからインスパイアされています。
 
